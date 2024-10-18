@@ -1,6 +1,7 @@
-from django.http import HttpResponse
+from django.http import JsonResponse
 from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return HttpResponse('Okay Gays are here')
+    return JsonResponse({"message":'Okay Gays are here'})
+
